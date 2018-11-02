@@ -8,7 +8,7 @@ include: "account_usage_dashboard.dashboard.lookml"
 
 datagroup: snowflake_usage_block_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "24 hour"
 }
 
 named_value_format: conditional_to_millions {
